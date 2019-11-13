@@ -76,11 +76,17 @@
                     <a  role="button" 
                         href="{% url 'article:article_list' %}?column={{ article.column.id }}"
                         class="btn btn-sm mb-2
-                            {% if article.column.title == 'Django' %}
+                            {% if article.column.title == 'Python' %}
                                 btn-success
-                            {% elif article.column.title == 'Java' %}
+                            {% elif article.column.title == 'Linux' %}
                                 btn-danger
-                            {% elif article.column.title == 'HTML' %}
+                            {% elif article.column.title == 'DevOps' %}
+                                btn-warning
+                            {% elif article.column.title == '架构' %}
+                                btn-success
+                            {% elif article.column.title == 'MySQL' %}
+                                btn-danger
+                            {% elif article.column.title == '网络知识' %}
                                 btn-warning
                             {% endif %}
                         "
